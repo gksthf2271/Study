@@ -10,7 +10,7 @@ part of 'rest_client.dart';
 
 class _RestClient implements RestClient {
   _RestClient(this._dio, {this.baseUrl}) {
-    baseUrl ??= 'http://localhost:8080';
+    baseUrl ??= 'https://dapi.kakao.com';
   }
 
   final Dio _dio;
@@ -18,19 +18,18 @@ class _RestClient implements RestClient {
   String? baseUrl;
 
   @override
-  Future<Token> getAccessToken(token) async {
+  Future<SearchResult> searchKeywords(qeury) async {
     const _extra = <String, dynamic>{};
-    final queryParameters = <String, dynamic>{};
+    final queryParameters = <String, dynamic>{r'query': qeury};
     final _headers = <String, dynamic>{};
     final _data = <String, dynamic>{};
-    _data.addAll(token.toJson());
     final _result = await _dio.fetch<Map<String, dynamic>>(
-        _setStreamType<Token>(
-            Options(method: 'POST', headers: _headers, extra: _extra)
-                .compose(_dio.options, '/login',
+        _setStreamType<SearchResult>(
+            Options(method: 'GET', headers: _headers, extra: _extra)
+                .compose(_dio.options, '/v2/local/search/keyword.json',
                     queryParameters: queryParameters, data: _data)
                 .copyWith(baseUrl: baseUrl ?? _dio.options.baseUrl)));
-    final value = Token.fromJson(_result.data!);
+    final value = SearchResult.fromJson(_result.data!);
     return value;
   }
 
