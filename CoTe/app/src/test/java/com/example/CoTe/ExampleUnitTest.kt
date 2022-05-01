@@ -19,4 +19,9 @@ class ExampleUnitTest {
     fun cote_binary() {
         Binary().main()
     }
+
+    @Test
+    fun cote_CycleRotation() {
+        CyclicRotation().main()
+    }
 }

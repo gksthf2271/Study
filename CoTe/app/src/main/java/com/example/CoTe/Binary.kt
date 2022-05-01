@@ -17,9 +17,6 @@ package com.example.CoTe
 * https://app.codility.com/demo/results/trainingRTTCCE-S4B/
 */
 class Binary {
-    init {
-        main()
-    }
     fun main() {
         print("Binary 답 : ${solution(1041)}\n")
     }
