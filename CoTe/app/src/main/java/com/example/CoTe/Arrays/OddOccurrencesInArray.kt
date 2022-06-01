@@ -1,4 +1,4 @@
-package com.example.CoTe
+package com.example.CoTe.Arrays
 
 
 /*
@@ -41,7 +41,7 @@ all but one of the values in A occur an even number of times.
 class OddOccurrencesInArray {
     fun main() {
         var input: ArrayList<Int> = arrayListOf(9, 3, 9, 3, 9, 7, 9)
-        input = arrayListOf(2, 2, 3, 3, 4, 3, 4)
+//        input = arrayListOf(2, 2, 3, 3, 4, 3, 4)
         print("OddOccurrencesInArray 답 : ${solution(input.toIntArray())}\n")
     }
 
