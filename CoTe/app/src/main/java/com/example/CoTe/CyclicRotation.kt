@@ -42,8 +42,7 @@ class CyclicRotation {
         print("CyclicRotation 답 : ${solution(input.toIntArray(), 5).toList()}\n")
     }
 
-    private
-    fun solution(A: IntArray, K: Int): IntArray {
+    private fun solution(A: IntArray, K: Int): IntArray {
         if (A.isEmpty()) return emptyArray<Int>().toIntArray()
 
         val array = A.toMutableList()

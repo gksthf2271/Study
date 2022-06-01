@@ -1,8 +1,7 @@
 package com.example.CoTe
 
+import org.junit.Assert.assertEquals
 import org.junit.Test
-
-import org.junit.Assert.*
 
 /**
  * Example local unit test, which will execute on the development machine (host).
@@ -23,5 +22,10 @@ class ExampleUnitTest {
     @Test
     fun cote_CycleRotation() {
         CyclicRotation().main()
+    }
+
+    @Test
+    fun cote_OddOccurrencesInArray() {
+        OddOccurrencesInArray().main()
     }
 }
