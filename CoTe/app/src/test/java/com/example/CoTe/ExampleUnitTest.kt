@@ -1,5 +1,11 @@
 package com.example.CoTe
 
+import com.example.CoTe.Arrays.CyclicRotation
+import com.example.CoTe.Arrays.OddOccurrencesInArray
+import com.example.CoTe.Iterations.Binary
+import com.example.CoTe.Time.FrogJmp
+import com.example.CoTe.Time.PermMissingElem
+import com.example.CoTe.Time.TapeEquilibrium
 import org.junit.Assert.assertEquals
 import org.junit.Test
 
@@ -27,5 +33,18 @@ class ExampleUnitTest {
     @Test
     fun cote_OddOccurrencesInArray() {
         OddOccurrencesInArray().main()
+    }
+
+    @Test
+    fun cote_FrogJmp() {
+        FrogJmp().main()
+    }
+    @Test
+    fun cote_PermMissingElem() {
+        PermMissingElem().main()
+    }
+    @Test
+    fun cote_TapeEquillibrium() {
+        TapeEquilibrium().main()
     }
 }
