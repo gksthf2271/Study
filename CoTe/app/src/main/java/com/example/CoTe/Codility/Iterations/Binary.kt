@@ -1,4 +1,4 @@
-package com.example.CoTe.Iterations
+package com.example.CoTe.Codility.Iterations
 
 
 /*
