@@ -1,11 +1,14 @@
 package com.example.CoTe
 
-import com.example.CoTe.Arrays.CyclicRotation
-import com.example.CoTe.Arrays.OddOccurrencesInArray
-import com.example.CoTe.Iterations.Binary
+import com.example.CoTe.Codility.Arrays.CyclicRotation
+import com.example.CoTe.Codility.Arrays.OddOccurrencesInArray
+import com.example.CoTe.Codility.CountingElements.FrogRiverOne
+import com.example.CoTe.Codility.Iterations.Binary
+import com.example.CoTe.Programmers.LV1.LV001
 import com.example.CoTe.Time.FrogJmp
 import com.example.CoTe.Time.PermMissingElem
 import com.example.CoTe.Time.TapeEquilibrium
+import com.example.TEST.test5
 import org.junit.Assert.assertEquals
 import org.junit.Test
 
@@ -46,5 +49,19 @@ class ExampleUnitTest {
     @Test
     fun cote_TapeEquillibrium() {
         TapeEquilibrium().main()
+    }
+    @Test
+    fun cote_FrogRiverOne() {
+        FrogRiverOne().main()
+    }
+
+    @Test
+    fun test() {
+        test5().solution();
+    }
+
+    @Test
+    fun Programmers_lv1() {
+        LV001()
     }
 }

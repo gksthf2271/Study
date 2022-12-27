@@ -1,4 +1,4 @@
-package com.example.CoTe.Arrays
+package com.example.CoTe.Codility.Arrays
 
 
 /*
