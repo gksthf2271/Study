@@ -6,6 +6,7 @@ import com.example.CoTe.Codility.CountingElements.FrogRiverOne
 import com.example.CoTe.Codility.Iterations.Binary
 import com.example.CoTe.Programmers.LV1.LV001
 import com.example.CoTe.Programmers.LV3.LV003_0114
+import com.example.CoTe.Programmers.LV3.LV003_0116
 import com.example.CoTe.Time.FrogJmp
 import com.example.CoTe.Time.PermMissingElem
 import com.example.CoTe.Time.TapeEquilibrium
@@ -68,16 +69,6 @@ class ExampleUnitTest {
 
     @Test
     fun Programmers_lv3() {
-//        LV003_0114().solution(
-//            n = 3,
-//            roads = arrayOf(
-//                intArrayOf(1, 2),
-//                intArrayOf(2, 3)
-//            ),
-//            sources = intArrayOf(2,3),
-//            1
-//        )
-
         LV003_0114().solution(
             n = 5,
             roads = arrayOf(
@@ -90,7 +81,10 @@ class ExampleUnitTest {
             sources = intArrayOf(1, 3, 5),
             5
         )
-//        [[1, 2], [1, 4], [2, 4], [2, 5], [4, 5]]
+    }
 
+    @Test
+    fun Programmers_lv3_0116() {
+        println("답 : ${LV003_0116().solution("abcdcba")}")
     }
 }
