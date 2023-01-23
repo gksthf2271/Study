@@ -7,6 +7,7 @@ import com.example.CoTe.Codility.Iterations.Binary
 import com.example.CoTe.Programmers.LV1.LV001
 import com.example.CoTe.Programmers.LV3.LV003_0114
 import com.example.CoTe.Programmers.LV3.LV003_0116
+import com.example.CoTe.Programmers.LV3.LV003_0117
 import com.example.CoTe.Time.FrogJmp
 import com.example.CoTe.Time.PermMissingElem
 import com.example.CoTe.Time.TapeEquilibrium
@@ -86,5 +87,12 @@ class ExampleUnitTest {
     @Test
     fun Programmers_lv3_0116() {
         println("답 : ${LV003_0116().solution("abcdcba")}")
+    }
+
+    @Test
+    fun Programmers_lv3_0117() {
+        LV003_0117().solution(
+            genres = arrayOf("Rock", "classic", "pop", "classic", "classic", "pop", "classic"),
+            intArrayOf(300, 500, 600, 150, 800, 2500, 500))
     }
 }
