@@ -5,6 +5,7 @@ import com.example.CoTe.Codility.Arrays.OddOccurrencesInArray
 import com.example.CoTe.Codility.CountingElements.FrogRiverOne
 import com.example.CoTe.Codility.Iterations.Binary
 import com.example.CoTe.Programmers.LV1.LV001
+import com.example.CoTe.Programmers.LV2.LV002_0204
 import com.example.CoTe.Programmers.LV3.LV003_0114
 import com.example.CoTe.Programmers.LV3.LV003_0116
 import com.example.CoTe.Programmers.LV3.LV003_0117
@@ -95,4 +96,14 @@ class ExampleUnitTest {
             genres = arrayOf("Rock", "classic", "pop", "classic", "classic", "pop", "classic"),
             intArrayOf(300, 500, 600, 150, 800, 2500, 500))
     }
+
+    @Test
+    fun Programmers_lv2_0204() {
+        LV002_0204().solution(
+            intArrayOf(2,3,3,5)
+//        intArrayOf(9, 1, 5, 3, 6, 2)
+        )
+    }
+
+
 }
